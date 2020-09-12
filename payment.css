@@ -1,0 +1,77 @@
+html { 
+  background: url("images/payment-bg.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body{
+  font-family:sans serif;
+}
+.payment-form{
+  max-width: 500px;
+  margin:2rem auto;
+  border:2px solid;
+  padding:2rem;
+  border-radius: 5px;
+  background-color:rgba(0,0,0,0.2);
+}
+form label{
+  display:block;
+  padding:2rem 0;
+}
+form input,form textarea{
+  display:block;
+  width:100%; 
+  padding:.5rem;
+  border-radius: 5px;
+}
+form select{
+  width:100%;
+  display:block;
+  padding:.5rem;
+  border-radius: 5px;
+}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color:rgb(134, 168, 134);
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.button-div{
+  display: flex;
+  justify-content: center;
+}
