@@ -1,5 +1,5 @@
 html { 
-  background: url("images/payment-bg.jpg") no-repeat center center fixed; 
+  background: url("https://image.freepik.com/free-photo/wood-table-top-blurred-kitchen-background_36051-232.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -15,6 +15,8 @@ body{
   padding:2rem;
   border-radius: 5px;
   background-color:rgba(0,0,0,0.2);
+  font-weight: bolder;
+  font-size: large;
 }
 form label{
   display:block;
@@ -34,14 +36,16 @@ form select{
 }
 .button {
   display: inline-block;
-  border-radius: 4px;
-  background-color:rgb(134, 168, 134);
+  border-radius: 7px;
+  background-color:rgb(42, 43, 42);
   border: none;
   color: #FFFFFF;
   text-align: center;
-  font-size: 28px;
+  font-size: 20px;
+  font-family: monospace;
+  font-weight: bold;
   padding: 20px;
-  width: 200px;
+  width: 210px;
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
@@ -74,4 +78,20 @@ form select{
 .button-div{
   display: flex;
   justify-content: center;
+}
+
+table{
+  width: 90%;
+}
+
+#phead{
+  width: 100%;
+  text-align: right;
+  font-weight: bolder;
+  font-size: 30px;
+
+}
+
+#fname, #quantity, #state, #city, #lname, #mobile, #password{
+ width: 190px;
 }
