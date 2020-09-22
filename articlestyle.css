@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 *{
   margin:0;
   padding:0;
@@ -121,7 +123,7 @@
 div{
   margin:10px;
   padding:10px;
-  border-style:dashed;
+  border-style:none;
   box-sizing:border-box;
   font-family: Times New Roman;
   text-decoration: none;
@@ -135,10 +137,21 @@ div{
 #d1{
   margin-right: 20px;
   color: grey;
+  background-color: blanchedalmond;
 }
 
 h2{color:black;}
 
 h1{
   color: black;
+}
+.art-head{
+  font-family: 'Roboto Slab', serif;
+    padding:20px;
+}
+.side-content{
+  font-family: 'Playfair Display', serif;
+  color:black;
+  font-size:0.9m;
+  padding:20px;
 }
