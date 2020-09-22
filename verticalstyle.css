@@ -123,7 +123,7 @@
 div{
   margin:10px;
   padding:10px;
-  border-style:dashed;
+  border-style:none;
   box-sizing:border-box;
   font-family: Times New Roman;
   text-decoration: none;
@@ -285,4 +285,14 @@ h2{color:black;}
 
 h1{
   color: black;
+}
+.art-head{
+  font-family: 'Roboto Slab', serif;
+    padding:20px;
+}
+.side-content{
+  font-family: 'Playfair Display', serif;
+  color:black;
+  font-size:0.9m;
+  padding:20px;
 }
