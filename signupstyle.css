@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap');
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+ hr { 
+            /*position: relative; 
+            top: 20px; 
+            border: none; 
+            height: .5px; 
+            background: black; 
+            margin-bottom: 50px; */
+
+	height: 10px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px #404240 inset;
+
+        }
+
+		body{
+			  background-image: url("bg1.jpg");
+
+
+			  /* Full height */
+			  height: 100%;
+
+			  /* Center and scale the image nicely */
+			  background-position: center;
+			  background-repeat: no-repeat;
+			  background-size: cover;
+
+		}
+		#signup{
+		width:450px;
+		background:white;
+		height:78vh;
+		align:center;
+		border-radius:25px;
+		color:black;
+		margin:2vh auto;
+/*		background-color: #ADF1FF;
+*/		}
+		.sign_up{
+		padding-top:1px;
+		font-weight:bold;
+		letter-spacing:2px;
+		color:black;
+		font-family:sans-serif;
+/*		background-color: #ADF1FF;
+*/
+		}
+		.content{
+		margin-left:10px;
+		text-decoration:none;
+		letter-spacing:2px;
+/*		background-color: #ADF1FF;
+*/
+
+		}
+		input{
+		background:white;
+		width:95%;
+		border:none;
+		color:black;
+		border-bottom:2px grey solid;
+		}
+		button{
+		margin-top:-5px;
+		margin-left:18%;
+		width:60%;
+		}
+		p{
+		margin-bottom:30px;
+		}
+		#email{
+		margin-right:10px;
+		}
+		#newPassword{
+		color:red;
+		font-weight:bolder;
+		position:relative;
+		margin-top:-55px;
+		opacity:0;
+		}
+		#emailText{
+		color:red;
+		font-weight:bold;
+		position:relative;
+		margin-top:-450px;
+		margin-left:5px;
+		letter-spacing:0px;
+		opacity:0;
+		}
+		input:focus, textarea:focus, select:focus{
+        outline: none;
+    }
+    

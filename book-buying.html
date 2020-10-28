@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Comida | Buy Book</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" type="image/png" href="images/icon1.png">
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+
+<!--    <style> #mytable,td{border: solid blue;} </style>
+ -->    
+ <script> 
+    $(document).ready(function (){
+var obj=[ { category : "Product", value : "Healthy n Easy Recipes" },
+{ category : "Type", value : "Hand Bound" },
+{ category : "Total Recipes", value : "100 handpicked recipes" }, 
+{ category : "Authors", value : "Tejas K Mukherjee<br>K Abhijeet<br>Suyash Gupta" },
+{ category : "Price", value : "&#8377 500" } ]
+var tb1 =$("<table/>").attr("id","mytable"); 
+$("#div1").append(tb1);
+for(var i =0; i <obj.length; i++) {
+var tr="<tr>";
+var td1 ="<td>"+obj[i]["category"]+"</td>";
+var td2="<td>"+obj[i]["value"]+"</td></tr>";
+$("#mytable").append(tr+td1+td2); }})
+
+</script>
+
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navigation header-nav">
+      <ul>
+        <a href="Article.html">
+          <li>ARTICLES</li>
+        </a>
+        <a href="Recipe.html">
+          <li>RECIPES</li>
+        </a>
+        <a href="book-buying.html">
+          <li>BUY BOOK</li>
+        </a>
+        <a href="login.html"><li>Login</li></a>
+        <a href="signup.html"><li>Signup</li></a>
+
+      </ul>
+    </nav>
+    <h1 class="name header-name">La Comida</h1>
+  </header>
+  <section class="content">
+    <div class="book-image">
+          <img src="images/recipe-book.jpg" alt="book-image" height="400px">
+    </div>
+
+    <div class="desc-table" id="div1">
+     <!-- <table class="desc-table">
+        <tr>
+          <td>Product</td>
+          <td>Healthy n Easy Recipes</td>
+        </tr>
+        <tr>
+          <td>Type</td>
+          <td>Hard Bound</td>
+        </tr>
+        <tr>
+          <td>Total Recipes</td>
+          <td>100 handpicked recipes</td>
+        </tr>
+        <tr>
+          <td>Authors</td>
+          <td>Tejas K Mukherjee<br>K Abhijeet<br>Suyash Gupta</td>
+        </tr>
+        <tr>
+          <td>Price</td>
+          <td>&#8377 500</td>
+        </tr>
+      </table> -->
+    </div>
+  </section>
+  <br/><br/><br/> 
+      <a href="payment-form.html"><div id="button-div">
+        <button class="button"><span>BUY NOW</span></button>
+        </div></a>
+    
+
+  
+  <div class="book-args">
+    <h1 align="center">WHY BUY OUR BOOK?</h1><br/><br/>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quod tempore qui blanditiis corrupti illo voluptatem ab praesentium modi quaerat, iste amet quibusdam a suscipit! Similique, quam? Similique doloribus consectetur iste tempora quod quae eaque corrupti debitis in temporibus, deleniti ipsum magnam ut explicabo et mollitia sunt. Consequuntur at nisi sapiente, deleniti cupiditate quasi facere. Tenetur ex suscipit nisi voluptatibus labore, consectetur eum quis dicta aliquid doloribus deserunt. Nulla, deserunt?
+    </p>
+  </div>
+  <footer class="footer">
+    <h3 class="name footer-name">La Comida</h3>
+    <nav class="navigation">
+      <ul>
+        <li><a href="#"><img src="https://www.freepnglogos.com/uploads/instagram-logos-png-images-free-download-2.png"
+              height="20px" alt="err"></a></li>
+        <li><a href="#"><img src="https://i7.pngguru.com/preview/5/948/917/youtube-icon-youtube-logo-png.jpg"
+              height="20px" alt="err"></a></li>
+        <li><a href="#"><img
+              src="https://is1-ssl.mzstatic.com/image/thumb/Purple124/v4/9b/72/ff/9b72ff12-abee-c6f3-76de-79fb7db4afcd/Icon-Production-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/246x0w.png"
+              height="20px" alt="err"></a></li>
+      </ul>
+    </nav>
+  </footer>
+  </body>
+  
+  </html>

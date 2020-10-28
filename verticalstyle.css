@@ -1,0 +1,298 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap');
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Times New Roman;
+  text-decoration: none;
+}
+.header{
+  background-color:rgb(0,0,0,0.7);
+  background-image:url("images/header.jpg");
+  background-blend-mode:multiply;
+  background-size: cover;
+  padding:25px;
+}
+.name{
+  font-family: 'Londrina Solid', cursive;
+  color:#FF9C00;
+  font-size:2.5em;
+}
+.header-name{
+  padding:40px 40px 40px 40px;
+  text-align:center;
+  font-size:80px;
+}
+.navigation ul{
+  margin:none;
+  padding:none;
+  text-align:center;
+}
+.navigation li{
+  color:white;
+  display: inline-block;
+  padding:5px 20px 5px 20px;
+}
+.header-nav li:hover{
+  color:orangered;
+}
+.header-nav:hover{
+  background-color:rgb(0,0,0,0.3);
+}
+.footer{
+  background-color:rgb(28, 133, 56);
+}
+.footer-name{
+  text-align:center;
+}
+.content{
+  display:flex;
+  justify-content: space-around;
+}
+.book-image{
+  padding: 20px;
+}
+.book-description{
+  padding: 20px;
+}
+.book-args{
+  padding:80px;
+}
+#button-div{
+  
+  display:flex;
+  justify-content: space-evenly;
+}
+.button {
+
+  border-radius: 4px;
+  background-color:rgba(45, 87, 53, 0.8);
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.desc-table{
+  border-collapse:collapse;
+  margin:25px;
+  font-size:1.5em;
+  min-width:500px;
+}
+.desc-table tr{
+  border-bottom:0.5px solid;
+}
+.desc-table tr:nth-of-type(odd){
+   background-color:rgb(77,87,146,0.1);
+}
+.desc-table td{
+  padding:12px 15px;
+}
+
+div{
+  margin:10px;
+  padding:10px;
+  border-style:none;
+  box-sizing:border-box;
+  font-family: Times New Roman;
+  text-decoration: none;
+}
+
+.pic{
+  height: 360px;
+  width: 85%;
+}
+#d1{
+  margin-right: 20px;
+  color: grey;
+}
+
+h2{color:black;}
+
+h1{
+  color: black;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Times New Roman;
+  text-decoration: none;
+}
+.header{
+  background-color:rgb(0,0,0,0.7);
+  background-image:url("images/header.jpg");
+  background-blend-mode:multiply;
+  background-size: cover;
+  padding:25px;
+}
+.name{
+  font-family: 'Londrina Solid', cursive;
+  color:#FF9C00;
+  font-size:2.5em;
+}
+.header-name{
+  padding:40px 40px 40px 40px;
+  text-align:center;
+  font-size:80px;
+}
+.navigation ul{
+  margin:none;
+  padding:none;
+  text-align:center;
+}
+.navigation li{
+  color:white;
+  display: inline-block;
+  padding:5px 20px 5px 20px;
+}
+.header-nav li:hover{
+  color:orangered;
+}
+.header-nav:hover{
+  background-color:rgb(0,0,0,0.3);
+}
+.footer{
+  background-color:rgb(28, 133, 56);
+}
+.footer-name{
+  text-align:center;
+}
+.content{
+  display:flex;
+  justify-content: space-around;
+}
+.book-image{
+  padding: 20px;
+}
+.book-description{
+  padding: 20px;
+}
+.book-args{
+  padding:80px;
+}
+#button-div{
+  
+  display:flex;
+  justify-content: space-evenly;
+}
+.button {
+
+  border-radius: 4px;
+  background-color:rgba(45, 87, 53, 0.8);
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.desc-table{
+  border-collapse:collapse;
+  margin:25px;
+  font-size:1.5em;
+  min-width:500px;
+}
+.desc-table tr{
+  border-bottom:0.5px solid;
+}
+.desc-table tr:nth-of-type(odd){
+   background-color:rgb(77,87,146,0.1);
+}
+.desc-table td{
+  padding:12px 15px;
+}
+
+div{
+  margin:10px;
+  padding:10px;
+  border-style:groove;
+  box-sizing:border-box;
+  font-family: Times New Roman;
+  text-decoration: none;
+  }
+
+.pic{
+  height: 360px;
+  width: 85%;
+}
+#d1{
+  margin-right: 20px;
+  color: grey;
+}
+
+h2{color:black;}
+
+h1{
+  color: black;
+}
+.art-head{
+  font-family: 'Roboto Slab', serif;
+    padding:20px;
+}
+.side-content{
+  font-family: 'Playfair Display', serif;
+  color:black;
+  font-size:0.9m;
+  padding:20px;
+}
