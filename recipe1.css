@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 * {box-sizing:border-box;
 padding:0;
 margin:0;}
@@ -102,7 +105,8 @@ margin:0;}
 background-color:#E6E4E4;
 }
 .instructions{
-  background-color:#E6E4E4;
+  padding:50px;
+  font-family: 'Noto Sans', sans-serif;
 }
 .recipe-container{
   display:flex;
@@ -113,23 +117,26 @@ background-color:#E6E4E4;
   text-align: center;
   font-weight: 800;
   padding:20px;
-  background-color:#E6E4E4;
-
+  font-family: 'Kalam', cursive;
 }
 .big{
   font-size: 3em;
 }
-table{
-  	
-}
 td{
   padding:15px;
-  font-family:cursive;
+  font-family: 'Berkshire Swash', cursive;
 }
 td li{
   padding: 5px;
   font-weight: 545;
 }
-img{
-  border-radius: 30%;
+.recipe-img{
+  padding: 20px;
+  float:left;
+  border-radius: 50%;
+}
+.recipe-img2{
+  padding: 20px;
+  float:right;
+  border-radius: 50%;
 }
