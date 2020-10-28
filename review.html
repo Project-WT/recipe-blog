@@ -1,16 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html ng-app>
 
 <head>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <style>
+    html{
+      background-image: url("images/review-bg.jpg");
+      background-blend-mode: multiply;
+      background-color:gray;
+      background-size: auto;
+    }
+    h2{
+      padding-left: 630px;
+    }
     table,
     td {
-      border: 1px solid black;
-      margin: 5%;
       font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+      font-weight: 900;
+      padding-left: 530px;
     }
 
     tr:hover {
@@ -59,7 +69,7 @@ color: white;
         <tr>
           <td rowspan="8" style="background-color: #4CAF50;">HELP US IMPROVE</td>
           <td><label for="customer_name">Enter Name: </label></td>
-          <td><input type="text" id="customer_name" placeholder="Name" required></td>
+          <td><input type="text" id="customer_name" placeholder="Name" required ng-model="name"></td>
         </tr>
         <tr>
           <td><label for="email">Enter email: </label></td>
@@ -74,6 +84,7 @@ color: white;
         </tr>
         </form>
         </table>
+        <h2>Thankyou for your feedback {{name}}!</h2>
         <p id="display"></p>
         <div id="div1"></div>
         </body>
