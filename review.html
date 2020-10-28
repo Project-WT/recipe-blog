@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <style>
+    table,
+    td {
+      border: 1px solid black;
+      margin: 5%;
+      font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    }
+
+    tr:hover {
+      background-color: #ddd;
+    }
+
+    td {
+      padding: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      color: black;
+}
+th {
+padding-top: 12px;
+padding-bottom: 12px;
+text-align: left;
+background-color: #4CAF50;
+color: white;
+}
+</style>
+<script>
+  $(document).ready(function () {
+    $("#submit").click(function () {
+      details = [
+        {
+          "customer_name": $("#customer_name").val(),
+          "email": $("#email").val(),
+          "review": $("#review").val()  
+        }
+      ];
+      var tbl = $("<table/>").attr("id", "mytable");
+      $("#div1").append(tbl);
+      for (var i = 0; i < details.length; i++) {
+        var tr = "<tr>";
+        var td1 = "<td>" + details[i]["customer_name"] + "</td>";
+        var td5 = "<td>" + details[i]["email"] + "</td>";
+        var td6 = "<td>" +details[i]["review"] +"</td>";
+        $("#mytable").append(tr + td1 + td5 + td6);
+      }
+    });
+  }); </script>
+  </head>
+  <body>
+    <table style="border: 1px solid black;" id="detail_table">
+      <form id="form1" class="form1class" action="">
+        <tr>
+          <td rowspan="8" style="background-color: #4CAF50;">HELP US IMPROVE</td>
+          <td><label for="customer_name">Enter Name: </label></td>
+          <td><input type="text" id="customer_name" placeholder="Name" required></td>
+        </tr>
+        <tr>
+          <td><label for="email">Enter email: </label></td>
+          <td><input type="text" id="email" placeholder="Email" required></td>
+        </tr>
+        <tr>
+          <td><label for="review">Give review:</label></td>
+          <td><textarea id="review"></textarea>></td>
+        </tr>
+        <tr style="align-items: center;">
+          <td colspan="3"><input type="button" value="Submit" id="submit" name="submitbutton"></td>
+        </tr>
+        </form>
+        </table>
+        <p id="display"></p>
+        <div id="div1"></div>
+        </body>
+        
+        </html>
