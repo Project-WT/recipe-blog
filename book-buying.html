@@ -10,6 +10,7 @@
  
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
 
+
 <!--    <style> #mytable,td{border: solid blue;} </style>
  -->    
  <script> 
@@ -29,6 +30,27 @@ $("#mytable").append(tr+td1+td2); }})
 
 </script>
 
+
+
+<script>
+$(document).ready(function(){
+
+  $("#zooming").mouseenter(function(){
+    $("#zooming").animate({width: "845px", height: "520px"}, 'slow');
+     // $(this).css("margin-left", "20px");
+  })
+
+$("#zooming").mouseleave(function(){
+    $("#zooming").animate({height: "400px", width: "650px"}, 'slow');
+ // $(this).css("margin-left", "90px");
+});
+  
+
+  
+});
+</script>
+
+
 </head>
 
 <body>
@@ -38,53 +60,37 @@ $("#mytable").append(tr+td1+td2); }})
         <a href="Article.html">
           <li>ARTICLES</li>
         </a>
-        <a href="Recipe.html">
+        <a href="recipe2.html">
           <li>RECIPES</li>
         </a>
         <a href="book-buying.html">
           <li>BUY BOOK</li>
         </a>
-        <a href="login.html"><li>Login</li></a>
-        <a href="signup.html"><li>Signup</li></a>
+        <a href="login.html"><li>LOGIN</li></a>
+        <a href="signup.html"><li>SIGNUP</li></a>
 
       </ul>
     </nav>
     <h1 class="name header-name">La Comida</h1>
   </header>
   <section class="content">
-    <div class="book-image">
-          <img src="images/recipe-book.jpg" alt="book-image" height="400px">
+    <div class="book-image" >
+          <img id="zooming" src="images/recipe-book.jpg" alt="book-image" height="400px">
+    </div>
+<div>
+	<br>
+    <div class="desc-table" id="div1">
+     
+    </div>
+    <br/>
+    <div style="">
+      <a href="http://localhost:3000/payment-form"><div id="button-div">
+        <button class="button"><span>BUY NOW</span></button>
+        </div></a></div>
     </div>
 
-    <div class="desc-table" id="div1">
-     <!-- <table class="desc-table">
-        <tr>
-          <td>Product</td>
-          <td>Healthy n Easy Recipes</td>
-        </tr>
-        <tr>
-          <td>Type</td>
-          <td>Hard Bound</td>
-        </tr>
-        <tr>
-          <td>Total Recipes</td>
-          <td>100 handpicked recipes</td>
-        </tr>
-        <tr>
-          <td>Authors</td>
-          <td>Tejas K Mukherjee<br>K Abhijeet<br>Suyash Gupta</td>
-        </tr>
-        <tr>
-          <td>Price</td>
-          <td>&#8377 500</td>
-        </tr>
-      </table> -->
-    </div>
   </section>
-  <br/><br/><br/> 
-      <a href="payment-form.html"><div id="button-div">
-        <button class="button"><span>BUY NOW</span></button>
-        </div></a>
+  
     
 
   

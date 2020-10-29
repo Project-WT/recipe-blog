@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html ng-app>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>La Comida | Recipes</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.js"></script>
+  <link rel="stylesheet" type="text/css" href="recipe1.css">
+  <link rel="icon" type="image/png" href="images/icon1.png">
+  <script>
+
+    function slideShowController($scope, $timeout) {
+      var slidesInSlideshow = 5;
+      var slidesTimeIntervalInMs = 3000;
+
+      $scope.slideshow = 1;
+      var slideTimer =
+        $timeout(function interval() {
+          $scope.slideshow = ($scope.slideshow % slidesInSlideshow) + 1;
+          slideTimer = $timeout(interval, slidesTimeIntervalInMs);
+        }, slidesTimeIntervalInMs);
+    }  
+  </script>
+</head>
+
+<body>
+    <div ng-controller="slideShowController" class="imageslide" ng-switch='slideshow' ng-animate="'animate'">
+      <div class="slider-content" ng-switch-when="1">
+        <img src="images/slider1.jpeg" height="500" width="1710" />
+      </div>
+      <div class="slider-content" ng-switch-when="2">
+        <img src="images/slider2.jpg" height="500" width="1710" />
+      </div>
+      <div class="slider-content" ng-switch-when="3">
+        <img src="images/slider3.jpg" height="500" width="1710" />
+      </div>
+      <div class="slider-content" ng-switch-when="4">
+        <img src="images/slider4.jpg" height="500" width="1710" />
+      </div>
+      <div class="slider-content" ng-switch-when="5">
+        <img src="images/slider5.jpg" height="500" width="1710" />
+      </div>
+    </div>
+  </div>
+  <div class="heading big">बेसन का हलवा</div>
+  <div class="recipe">
+    <div class="ingredients" style="width:30%">
+      <table>
+        <tr>
+          <td><b>Ingredients</b></td>
+          <td>
+            <ul>
+              <li>¼ cup ghee (clarified butter)</li>
+              <li>1 cup besan (gram flour or chickpea flour)</li>
+              <li>1.5 cups of hot milk</li>
+              <li>⅓ cup sugar</li>
+              <li>¼ teaspoon cardamom powder</li>
+              <li>4 to 5 pistachios , chopped</li>
+              <li>4 to 5 almonds , chopped</li>
+              <li>few strands of saffron - optional</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td><b>Cuisine</b></td>
+          <td>Indian</td>
+        </tr>
+        <tr>
+          <td><b>Course</b></td>
+          <td>Desserts</td>
+        </tr>
+        <tr>
+        <td><b>Prep time</b></td>
+        <td>30 mins</td>
+        </tr>
+        <tr>
+          <td><b>Servings</b></td>
+          <td>2/3</td>
+        </tr>
+      </table>
+    </div>
+    <div class="instructions" style="width:70%" align="justify" style="color: gray;">
+      <p style="color: rgb(80, 80, 80);">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem corporis autem quo veritatis voluptas accusantium ullam fugit id sint nihil ratione reprehenderit porro adipisci distinctio tempora aliquid ducimus quae eius, eveniet ipsam quidem cum mollitia! Debitis, eius dolorem, officia veniam odit in rem architecto beatae labore reprehenderit voluptatem, totam temporibus. Quisquam, modi quos maxime labore pariatur neque. Numquam, soluta aliquam quia nobis id sed minus nesciunt voluptas dignissimos voluptates possimus dicta maiores autem tenetur distinctio enim eveniet nulla molestias temporibus atque! Ipsa officiis vero eum error debitis explicabo ducimus facere atque numquam. Nesciunt vel reprehenderit provident, dicta id eos. Dolor, nobis? Sequi sed hic eos, perferendis voluptatum harum inventore explicabo.</p><br>
+      <img class="recipe-img" src="images/besan.JPG">
+      <p style="color: rgb(30, 119, 30);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores fugit officia accusamus architecto, libero consequuntur accusantium reprehenderit delectus ducimus autem suscipit expedita enim iste aspernatur illo ab, quae doloremque natus dolorum deserunt vel. Eos optio ex ab itaque tempora cum consectetur natus exercitationem placeat velit. Doloremque vitae dolores eaque, cum mollitia, unde nisi excepturi illo minus sed dolorum esse officiis voluptates non fuga amet autem dolor laborum exercitationem perferendis incidunt dicta iste! Obcaecati corrupti provident a dicta iste nulla mollitia maiores consequuntur ratione, delectus culpa eos accusamus ipsa architecto minus id eius. Minus, maiores vero molestiae quam hic quisquam ducimus?
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, dolorem. Cumque mollitia quod id corrupti consequuntur? Veniam, quo cupiditate numquam eaque a labore soluta blanditiis perspiciatis molestiae similique quos ullam ea nam quas molestias debitis quasi, atque qui ipsa alias error minus. Qui laboriosam optio, deleniti assumenda voluptate iusto commodi? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores quo, eum modi ullam fugiat pariatur adipisci repellendus corporis earum ad.</p>
+      <img class="recipe-img2" src="images/besan2.JPG">
+      <p style="color:rgb(78, 78, 78);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quo tenetur cum veniam possimus quas enim quod laudantium itaque! Quasi sequi ex maiores ullam ad! Beatae, repellendus veniam ullam odit nulla quas aliquid ipsa sint, adipisci sit esse eaque eveniet! Nam sit quos aliquid blanditiis. Nisi, iusto consequatur, tenetur provident pariatur aspernatur voluptate cupiditate suscipit eius placeat facere illo excepturi alias at quia eveniet porro a totam dolorum quam debitis soluta. A mollitia laudantium inventore non reiciendis, accusamus quos sint dolorum ratione doloremque autem iure, nobis expedita sequi quo! Nemo enim ex unde optio voluptatem laudantium architecto facere dicta et repudiandae porro quos, quaerat quisquam illo similique reprehenderit laboriosam. Non recusandae laborum cum vero ullam quidem possimus quo iste tempora accusantium voluptas maxime explicabo impedit tenetur amet at adipisci consequatur modi harum nisi nemo sit, officiis sapiente! Temporibus tenetur sunt, libero adipisci assumenda vero explicabo dicta deleniti reprehenderit eius at esse. Architecto consequatur praesentium amet ex laboriosam exercitationem rem fuga dolores corporis reiciendis nostrum aut itaque optio ad aliquam, cupiditate fugiat quas totam dicta facere perspiciatis hic dolore sapiente. Soluta aliquam vitae animi autem totam, perferendis laborum a voluptatibus officia! Adipisci, perferendis blanditiis earum doloribus sapiente nobis reiciendis harum eligendi.</p>
+    </div>
+  </div>
+</div>
+<nav>
+  <ul class="recipe-nav" style="text-decoration:none; color: black;">
+    <li><a href="recipe2.html">Moroccan Eggplant</a></li>
+    <li><a href="Article.html">Back to home</a></li>
+  </ul>
+</nav>
+</body>
+
+</html>
