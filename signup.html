@@ -1,33 +1,156 @@
 <html>
 <head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Comida | Sign Up</title>
+
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 <script src="https://use.fontawesome.com/15aa3afd58.js"></script>
- <link rel="stylesheet" type="text/css" href="signupstyle.css">
+ <!-- <link rel="stylesheet" type="text/css" href="http://localhost:3000/signupstyle.css"> -->
  <link rel="icon" type="image/png" href="images/icon1.png">
 
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+ hr { 
+            /*position: relative; 
+            top: 20px; 
+            border: none; 
+            height: .5px; 
+            background: black; 
+            margin-bottom: 50px; */
+
+	height: 10px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px #404240 inset;
+
+        }
+
+		body{
+			  background-image: url("https://cdn.pixabay.com/photo/2017/10/22/20/42/table-2879213_1280.jpg");
+
+
+			  /* Full height */
+			  height: 100%;
+
+			  /* Center and scale the image nicely */
+			  background-position: center;
+			  background-repeat: no-repeat;
+			  background-size: cover;
+
+		}
+		#signup{
+		width:450px;
+		background:white;
+		height:78vh;
+		align:center;
+		border-radius:25px;
+		color:black;
+		margin:2vh auto;
+/*		background-color: #ADF1FF;
+*/		}
+		.sign_up{
+		padding-top:1px;
+		font-weight:bold;
+		letter-spacing:2px;
+		color:black;
+		font-family:sans-serif;
+/*		background-color: #ADF1FF;
+*/
+		}
+		.content{
+		margin-left:10px;
+		text-decoration:none;
+		letter-spacing:2px;
+/*		background-color: #ADF1FF;
+*/
+
+		}
+		input{
+		background:white;
+		width:95%;
+		border:none;
+		color:black;
+		border-bottom:2px grey solid;
+		}
+		button{
+		margin-top:-5px;
+		margin-left:18%;
+		width:60%;
+		}
+		p{
+		margin-bottom:30px;
+		}
+		#email{
+		margin-right:10px;
+		}
+		#newPassword{
+		color:red;
+		font-weight:bolder;
+		position:relative;
+		margin-top:-55px;
+		opacity:0;
+		}
+		#emailText{
+		color:red;
+		font-weight:bold;
+		position:relative;
+		margin-top:-450px;
+		margin-left:5px;
+		letter-spacing:0px;
+		opacity:0;
+		}
+		input:focus, textarea:focus, select:focus{
+        outline: none;
+    }
+
+</style>
+
+<script>
+	var i = 0;
+function change() {
+  var doc = document.getElementById("background");
+  var color = ["rgba(238, 255, 0, 0.363)", "rgba(0, 255, 234, 0.363)", "rgba(81, 255, 0, 0.363)","rgba(0, 0, 0, 0.363)"," rgba(255, 0, 255, 0.158)"];
+  doc.style.backgroundColor = color[i];
+  i = (i + 1) % color.length;
+}
+setInterval(change, 1000);
+</script>
+
+
+ 
 </head>
-<body >
+<body>
+	<div id="background" style=" background-color: rgba(255, 0, 255, 0.151); text-align: center; color:rgb(243, 243, 243)"><h1>Sign Up to enjoy our Free Newsletter Weekly</h1></div>
 <div id="signup">
 <div style="text-align:center" class="kal">
-<p class="sign_up"><h1>Sign Up </h2></p>
+<p class="sign_up"><h1>Sign Up</h2></p>
 <hr></div>
+<form action="/" method="POST" onsubmit="return check()">
+
 <div class="content">
-<input type="email" id="email" placeholder="abc123@qwerty.com" name="email">
+<input type="email" id="email" placeholder="abc123@qwerty.com" name="email" >
+
+
 <p>Email <i id="emailIcon" style="color:red;opacity:0;" class="fa fa-info-circle" aria-hidden="true"></i></p>
-<input id="password" type="password" placeholder="Password">
-<p>Password <i id="passwordIcon" style="color:red;opacity:0" class="fa fa-info-circle" aria-hidden="true"></i></p> 
-<input id="confirmPassword" type="password" placeholder="Retype the Password">
-<p>Confirm Password </p>
-<p id="incorrect" style="color:red;opacity:0"><b>Passwords don't match</b></p>
-<p id="newPassword">Please enter a password</p>
-<p style="margin-top:15px;" >Remember Me
-	 <input style= "margin-top:-1px;margin-left:-45%;" type="checkbox"></p>
+<input id="nm" name="name" type="text" placeholder="Enter your name" value="" required>
+<p>Name 
+</p> 
+
+
+<input id="Phone" type="text" placeholder="9087654321" name="phone" value="" pattern="^\d{10}$" required>
+<p>Phone </p>
+
 </div>
 	 <hr>
-<button type="submit" class="btn btn-primary" onclick="check()">Register</button>
-<p id="confirmed" style="opacity:0;color:green;font-weight:bold; margin-top:23px;text-align:center;">Registration successful!!</p>
-<p style="" id="emailText">Please enter a valid email address</p>
-
+<button type="submit" class="btn btn-primary" >Register</button>
+<p id="confirmed" style="opacity:0;color:green;font-weight:bold;margin-left: 00px; margin-top:43px;text-align:center;">Registration successful!!<br></p>
+<p id="emailText" style="margin-left: 00px; margin-top:-43px;text-align:center;" >Please enter a valid email address</p>
+</form>
 
 </div>
 
@@ -38,41 +161,34 @@ function check(){
 	var atpos=x.indexOf("@");
 	var dotpos=x.lastIndexOf(".");
 
-if(document.getElementById("password").value != document.getElementById("confirmPassword").value){
-document.getElementById("incorrect").style.opacity='1';
-document.getElementById("newPassword").style.opacity='0';
-document.getElementById("passwordIcon").style.opacity='1';
-}
-else if(document.getElementById("password").value == ""){
-document.getElementById("newPassword").style.opacity='1';
-}
-else if(x =="" || atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length){
+
+if(x =="" || atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length){
 document.getElementById("emailIcon").style.opacity='1';
 document.getElementById("emailText").style.opacity='1';
 document.getElementById("passwordIcon").style.opacity='0';
-
+return false;
 }
 else{
-document.getElementById("incorrect").style.opacity='0';
-document.getElementById("newPassword").style.opacity='0';
+
 document.getElementById("confirmed").style.opacity='1';
-document.getElementById("passwordIcon").style.opacity='0';
 document.getElementById("emailIcon").style.opacity='0';
 document.getElementById("emailText").style.opacity='0';
-
+return true;
 }
 }
 </script>
 </body>
-<footer style="text-align: center;">
+<footer style="text-align: center; background-color: rgba(0, 255, 255, 0.082);">
 	<hr>
 	<h3 align="center">La Comida: </h3>
 	<a href="Article.html">ARTICLES</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    
-	<a href="Recipe.html">RECIPES</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="recipe2.html">RECIPES</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	<a href="book-buying.html">BUYBOOK</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	
-	<a href="#">ABOUTS</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<a href="login.html">LOGIN</a> <br>
+	<a href="#">ABOUTS</a>
+	<!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+	<!-- <a href="login.html">LOGIN</a>  -->
+	<br>
 	<br>
 	*All copyrights reserved*
 </footer>

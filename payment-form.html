@@ -1,17 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>La Comida | Details</title>
-  <link rel="stylesheet" href="payment.css">
-  <link rel="icon" type="image/png" href="images/icon1.png">
+  <!-- <link rel="stylesheet" href="payment.css"> -->
+  <!-- <link rel="icon" type="image/png" href="images/icon1.png"> -->
+
+
+ 
+  <style>
+    html { 
+  background: url("https://image.freepik.com/free-photo/wood-table-top-blurred-kitchen-background_36051-232.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body{
+  font-family:sans serif;
+}
+.payment-form{
+  max-width: 500px;
+  margin:2rem auto;
+  border:2px solid;
+  padding:2rem;
+  border-radius: 5px;
+  background-color:rgba(0,0,0,0.2);
+  font-weight: bolder;
+  font-size: large;
+}
+form label{
+  display:block;
+  padding:2rem 0;
+}
+form input,form textarea{
+  display:block;
+  width:100%; 
+  padding:.5rem;
+  border-radius: 5px;
+}
+form select{
+  width:100%;
+  display:block;
+  padding:.5rem;
+  border-radius: 5px;
+}
+.button {
+  display: inline-block;
+  border-radius: 7px;
+  background-color:rgb(42, 43, 42);
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  font-family: monospace;
+  font-weight: bold;
+  padding: 20px;
+  width: 210px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.button-div{
+  display: flex;
+  justify-content: center;
+}
+
+table{
+  width: 90%;
+}
+
+#phead{
+  width: 100%;
+  text-align: right;
+  font-weight: bolder;
+  font-size: 30px;
+
+}
+
+#fname, #quantity, #state, #city, #lname, #mobile, #password{
+ width: 190px;
+}
+
+  </style>
 </head>
 <body>
   <div id="wrap">
     
-  <form class="payment-form">
-    <div id="phead"> PAYMENT DETAILS</div>
+  <form  action="/" method="POST" class="payment-form" onsubmit="msg()" id="frm">
+    <div id="phead"> DELIVERY DETAILS</div>
     <BR><hr >
     
     <table>
@@ -27,7 +129,7 @@
       <tr>
         <td>  <label for="quantity">QUANTITY</label> </td>
         <td> <select id="quantity" name="quantity" required>
-        <option value="0">_ _</option>
+        <!-- <option value="0">_ _</option> -->
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -37,7 +139,7 @@
       <tr>
         <td>  <label for="state">STATE</label> </td>
         <td> <select id="state" name="state" required>
-        <option value="null">_ _</option> 
+        <!-- <option value="null">_ _</option>  -->
         <option value="Maharashtra">MAHARASHTRA</option> 
         <option value="West Bengal">WEST BENGAL</option>
         <option value="Jharkhand">JHARKHAND</option>
@@ -57,7 +159,7 @@
     </table> 
 
 <label for="adline">ADDRESS</label>
-      <textarea id="adline" placeholder="Enter complete address" required></textarea>
+      <textarea id="adline" name="address" placeholder="Enter complete address" required></textarea>
      
 
 
@@ -67,21 +169,30 @@
         <td>  <label for="mobile">MOBILE</label> </td>
         <td> <input type="tel" id="mobile" name="mobile" placeholder="+919999999999" required>  </td>
       </tr>
-      <tr>
+      <!-- <tr>
         <td> <label for="password">CONFIRM PASSWORD</label>  </td>
         <td> <input type="password" id="password" name="password" placeholder="Enter password" required>  </td>
-      </tr>
+      </tr> -->
 
     </table>
      
 
-
-  </form>
-
     
     </div>
     <div class="button-div">
-    <button class="button"><span>Confirm Order</span></button>
+    <input type="reset" class="button" value="Reset Form">
+    <input type="submit" class="button" value="Confirm Order">
+
 </div>
+
+</form>
+
+<script>
+  function msg(){
+    alert("Order placed successfully");
+
+  }
+</script>
+
   </body>
 </html>

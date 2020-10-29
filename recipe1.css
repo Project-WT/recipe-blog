@@ -149,7 +149,11 @@ td li{
   padding-bottom: 30px;
   font-size: 1.5em;
   font-family: cursive;
+  
 }
+
 .recipe-nav{
-  background-color:greenyellow;
+  background-color:#ffdd00c9;
+  color:black;
+  text-decoration: none;
 }
