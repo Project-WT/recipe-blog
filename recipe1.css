@@ -141,3 +141,15 @@ td li{
   float:right;
   border-radius: 50%;
 }
+.recipe-nav li{
+  display: inline-block;
+  padding-left:280px;
+  padding-right: 280px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 1.5em;
+  font-family: cursive;
+}
+.recipe-nav{
+  background-color:greenyellow;
+}
