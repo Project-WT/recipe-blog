@@ -31,7 +31,7 @@ Here are a few screenshots of the website:
 ![BOOK_PAGE](Screenshots/buybook1.JPG)
 
 
-![BOOK_PAGE](Screenshots/buybook2.png)
+![BOOK_PAGE](Screenshots/buybook2.JPG)
 
 
 **ARTICLES ON VERTICAL FARMING**
@@ -41,4 +41,4 @@ Here are a few screenshots of the website:
 
 **REGISTER FOR WEEKLY NEWSLETTER**
 
-![REGISTER_PAGE](Screenshots/register.JPG)
+![REGISTER_PAGE](Screenshots/register.PNG)
