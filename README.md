@@ -37,3 +37,8 @@ Here are a few screenshots of the website:
 **ARTICLES ON VERTICAL FARMING**
 
 ![VERTICAL_PAGE](Screenshots/vertical.JPG)
+
+
+**REGISTER FOR WEEKLY NEWSLETTER**
+
+![REGISTER_PAGE](Screenshots/register.JPG)
