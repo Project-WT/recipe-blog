@@ -41,4 +41,4 @@ Here are a few screenshots of the website:
 
 **REGISTER FOR WEEKLY NEWSLETTER**
 
-![REGISTER_PAGE](Screenshots/register.PNG)
+![REGISTER_PAGE](Screenshots/register.png)
