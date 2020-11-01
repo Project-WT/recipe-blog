@@ -13,7 +13,6 @@ Here are a few screenshots of the website:
 ![RECIPE_PAGE](Screenshots/recipe1-1.JPG)
 
 
-**RECIPE PAGE (BESAN KA HALWA)**
 
 ![RECIPE_PAGE](Screenshots/recipe1-2.JPG)
 
@@ -23,7 +22,6 @@ Here are a few screenshots of the website:
 ![RECIPE_PAGE](Screenshots/recipe2-1.JPG)
 
 
-**RECIPE PAGE (STUFFED EGGPLANT)**
 
 ![RECIPE_PAGE](Screenshots/recipe2-2.JPG)
 
@@ -33,6 +31,9 @@ Here are a few screenshots of the website:
 ![BOOK_PAGE](Screenshots/buybook1.JPG)
 
 
-**BUY BOOK**
-
 ![BOOK_PAGE](Screenshots/buybook2.JPG)
+
+
+**ARTICLES ON VERTICAL FARMING**
+
+![VERTICAL_PAGE](Screenshots/vertical.JPG)
